@@ -179,8 +179,9 @@
         box-sizing: border-box;
         /* 24px - 32px */
         padding: clamp(1.5rem, 3vw, 2rem);
-        background-color: #fff;
-        box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+        background-color: var(--darkPanel);
+        border: var(--panelBorder);
+        box-shadow: rgba(0, 0, 0, 0.8) 0px 2px 4px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -203,7 +204,7 @@
         line-height: 1.2em;
         text-align: inherit;
         margin: 0 0 1rem 0;
-        color: var(--headerColor);
+        color: var(--bodyTextColorWhite);
     }
     #hero-1621 .cs-item-text {
         /* 14px - 16px */
@@ -212,7 +213,7 @@
         max-width: 28.125rem;
         margin: 0;
         padding: 0;
-        color: var(--bodyTextColor);
+        color: #cccccc;
     }
     #hero-1621 .cs-background {
         width: 100%;
@@ -616,7 +617,8 @@
 @media only screen and (min-width: 0rem) {
     #why-choose-1657 {
         padding: var(--sectionPadding);
-        background-color: #f3f3f4;
+        background-color: var(--darkPanel);
+        color: var(--bodyTextColorWhite);
         position: relative;
         z-index: 1;
         overflow: hidden;
@@ -678,7 +680,7 @@
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
         margin: 0;
-        color: var(--bodyTextColor);
+        color: #cccccc;
     }
     #why-choose-1657 .cs-wrapper {
         width: 100%;
@@ -694,7 +696,7 @@
         content: "";
         width: 100vw;
         height: 500%;
-        background: #fff;
+        background: var(--borderColor);
         opacity: 1;
         display: block;
         position: absolute;
@@ -738,7 +740,7 @@
         width: 100%;
         max-width: 32.625rem;
         margin: 0;
-        color: var(--headerColor);
+        color: var(--bodyTextColorWhite);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
